@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -e
+
+/usr/bin/supervisord --nodaemon --configuration /etc/supervisord.conf
+
+/usr/bin/supervisorctl start all
